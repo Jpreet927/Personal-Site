@@ -141,3 +141,45 @@ body {
 .skills__design-right img:hover {
     transform: scale(1.2);
 }
+
+
+/* FOOTER STYLES */
+
+.footer__container {
+    background-color: #030716;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.footer__container h1 {
+    color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+.footer__icons-container {
+    display: flex;
+    gap: 1em;
+}
+
+.footer__icons-container img {
+    height: 0.8em;
+}
+
+.footer__container button {
+    background-image: linear-gradient(to right, #409DEA, #7FE3F9);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1em 2.4em;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.footer__container button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
