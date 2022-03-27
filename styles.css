@@ -142,6 +142,10 @@ body {
     transform: scale(1.2);
 }
 
+.skills__development-right img:hover {
+    transform: scale(1.2);
+}
+
 
 /* FOOTER STYLES */
 
@@ -157,6 +161,7 @@ body {
 
 .footer__container h1 {
     color: rgb(238, 238, 238);
+    font-size: 3em;
     margin: 0;
 }
 
@@ -166,7 +171,7 @@ body {
 }
 
 .footer__icons-container img {
-    height: 0.8em;
+    height: 1em;
 }
 
 .footer__container button {
