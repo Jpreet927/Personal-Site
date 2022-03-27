@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main__container {
+    height: 100vh;
+    background-image: url("./images/Paths-Eye.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.main__container header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 10em;
+}
+
+.main__container header nav img {
+    height: 16px;
+}
+
+.main__container header nav ul {
+    display: flex;
+    gap: 5em;
+}
+
+.main__container header nav ul li {
+    list-style: none;
+    /* transition: background-image 0.2s ease; */
+}
+
+.main__container header nav ul li a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    transition: all 0.2s ease;
+}
+
+.main__container header nav ul li a:hover {
+    background-image: linear-gradient(to right, #409DEA, #7FE3F9);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.main__body {
+    padding: 15em;
+}
+
+.main__body h1,
+.main__body p {
+    color:rgb(238, 238, 238)
+}
+
+.main__body h1 {
+    font-size: 3em;
+}
+
+/* SKILLS SECTION */
+.skills__container {
+    background-image: url("./images/Section-Background.png");
+    background-size: cover;
+    background-position: center;
+    padding: 7.5em 15em;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__container h1, 
+.skills__container p {
+    color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+.skills__container p {
+    color:rgb(174, 183, 190);
+    line-height: 1.5em;
+}
+
+.skills__container h1 {
+    font-size: 3em;
+}
+
+.skills__container h3 {
+    background-image: linear-gradient(to right, #409DEA, #7FE3F9);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.skills__design-container,
+.skills__developmenr-container {
+    padding: 0 0em;
+}
+
+.skills__design,
+.skills__development {
+    display: flex;
+    align-items:flex-start;
+    gap: 6em;
+}
+
+.skills__design {
+    margin-bottom: 2em;
+}
+
+.skills__design-right,
+.skills__design-left,
+.skills__development-right,
+.skills__development-left {
+    width: 50%;;
+}
+
+.skills__design-right,
+.skills__development-right {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+.skills__design-right img,
+.skills__development-right img {
+    height: 2.8em;
+    transition: transform 0.2s ease;
+}
+
+.skills__design-right img:hover {
+    transform: scale(1.2);
+}
