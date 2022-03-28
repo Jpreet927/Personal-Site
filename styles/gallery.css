@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/Section-Background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.gallery-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 10em;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+}
+
+.navbar-background {
+  background-color: rgba(3, 7, 22, 0.815);
+  backdrop-filter: blur(2rem);
+}
+
+.gallery-navbar img {
+  height: 16px;
+}
+
+.gallery-navbar ul {
+  display: flex;
+  gap: 5em;
+}
+
+.gallery-navbar ul li {
+  list-style: none;
+  /* transition: background-image 0.2s ease; */
+}
+
+.gallery-navbar ul li a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  transition: all 0.2s ease;
+}
+
+.current-page {
+  font-weight: 700;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.gallery-navbar ul li a:hover {
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.gallery-body {
+  padding: 3em 15em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.gallery-body h3 {
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1em;
+}
+
+.gallery-title {
+  color: rgb(238, 238, 238);
+  font-size: 3em;
+}
+
+.development-projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.development-project,
+.design-project,
+.artwork {
+  width: 100%;
+  overflow: hidden;
+}
+
+.development-projects-container img,
+.design-projects-container img {
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.development-projects-container img:hover,
+.design-projects-container img:hover,
+.artwork-gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+.design-projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.artwork-gallery-container {
+  line-height: 0;
+
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 3;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.artwork img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+}

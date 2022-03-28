@@ -12,6 +12,7 @@
   background-image: url("./images/Paths-Hero-Image.png");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .main__container header nav {
@@ -23,11 +24,12 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
 }
 
 .navbar-background {
-  background-color: #030716b0;
+  background-color: rgba(3, 7, 22, 0.815);
   backdrop-filter: blur(2rem);
 }
 
@@ -98,6 +100,27 @@
   -moz-text-fill-color: transparent;
 }
 
+.main__social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  position: absolute;
+  bottom: 0;
+  left: 12em;
+}
+
+.main__social-icons img {
+  /* height: 1em; */
+  width: 1.2em;
+}
+
+.main__social-line {
+  width: 1px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
 /* PROJECTS SECTION */
 .projects-section {
   background-color: #030716;
@@ -145,6 +168,12 @@
   width: 50%;
 }
 
+.project-thumbnail {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
 .project-description {
   display: flex;
   flex-direction: column;
@@ -153,6 +182,17 @@
 
 .project-thumbnail img {
   max-width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-thumbnail img:hover {
+  transform: scale(1.1);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .project-link {
@@ -256,9 +296,9 @@
   transform: scale(1.2);
 }
 
-/* FOOTER STYLES */
+/* contact STYLES */
 
-.footer__container {
+.contact__container {
   background-color: #030716;
   height: 100vh;
   display: flex;
@@ -268,22 +308,22 @@
   gap: 1.5em;
 }
 
-.footer__container h1 {
+.contact__container h1 {
   color: rgb(238, 238, 238);
   font-size: 3em;
   margin: 0;
 }
 
-.footer__icons-container {
+.contact__icons-container {
   display: flex;
   gap: 1em;
 }
 
-.footer__icons-container img {
+.contact__icons-container img {
   height: 1em;
 }
 
-.footer__container button {
+.contact__container button {
   background-image: linear-gradient(to right, #409dea, #7fe3f9);
   color: white;
   border: none;
@@ -293,7 +333,21 @@
   transition: transform 0.2s ease;
 }
 
-.footer__container button:hover {
+.contact__container button:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  background-color: #0a0e1e;
+}
+
+footer p {
+  font-size: 0.8em;
+  color: rgb(174, 183, 190);
 }
