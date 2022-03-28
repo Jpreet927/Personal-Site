@@ -98,6 +98,82 @@
   -moz-text-fill-color: transparent;
 }
 
+/* PROJECTS SECTION */
+.projects-section {
+  background-color: #030716;
+  padding-top: 7.5em;
+  /* padding: 7.5em 15em; */
+}
+
+.projects-section h1 {
+  color: rgb(238, 238, 238);
+  font-size: 4em;
+  margin: 0 3.66em;
+  margin-bottom: 0;
+}
+
+.projects-section p {
+  line-height: 1.5em;
+  color: rgb(174, 183, 190);
+}
+
+.projects-section .project-description h3 {
+  font-weight: 700;
+  font-size: 2.5em;
+  background-image: linear-gradient(to right, #298cdd, #a2eeff);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.projects-section .project-subtitle {
+  color: #445069;
+}
+
+.project {
+  display: flex;
+  gap: 3em;
+  padding: 5em 15em;
+}
+
+.project-description,
+.project-thumbnail {
+  width: 50%;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-thumbnail img {
+  max-width: 100%;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.project-link img {
+  height: 0.8em;
+}
+
+.project-link a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+.project-alternate {
+  background-color: #0a0e1e;
+}
+
 /* SKILLS SECTION */
 .skills__container {
   background-image: url("./images/Section-Background.png");
@@ -120,12 +196,13 @@
 }
 
 .skills__container h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 0.6em;
+  /* margin: 0 15em; */
 }
 
 .skills__container h3 {
-  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-image: linear-gradient(to right, #089bdf, #caf5ff);
   background-size: cover;
   background-clip: text;
   color: transparent;
