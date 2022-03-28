@@ -9,7 +9,7 @@
 
 body {
   background-image: url("../images/Section-Background.png");
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   position: relative;
 }
@@ -143,4 +143,17 @@ body {
   height: auto !important;
   margin-bottom: 24px;
   transition: transform 0.2s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  background-color: #0a0e1e;
+}
+
+footer p {
+  font-size: 0.8em;
+  color: rgb(174, 183, 190);
 }
