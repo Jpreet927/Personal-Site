@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.main__container header nav {
+.main__navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,12 +25,14 @@
   left: 0;
   right: 0;
   z-index: 10;
-  transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+  transition: backdrop-filter 0.5s ease, background-color 0.5s ease,
+    padding 0.2s ease;
 }
 
 .navbar-background {
   background-color: rgba(3, 7, 22, 0.815);
   backdrop-filter: blur(2rem);
+  padding: 2em 10em;
 }
 
 .main__container header nav img {

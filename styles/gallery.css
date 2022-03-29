@@ -106,6 +106,7 @@ body {
 .design-project,
 .artwork {
   width: 100%;
+  margin-bottom: 24px;
   overflow: hidden;
 }
 
@@ -129,7 +130,6 @@ body {
 
 .artwork-gallery-container {
   line-height: 0;
-
   -webkit-column-count: 3;
   -webkit-column-gap: 0px;
   -moz-column-count: 3;
@@ -141,7 +141,7 @@ body {
 .artwork img {
   width: 100% !important;
   height: auto !important;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   transition: transform 0.2s ease;
 }
 
