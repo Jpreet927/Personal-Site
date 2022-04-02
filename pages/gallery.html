@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="../styles/gallery.css">
+    <script src="../scripts/gallery.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,6 +26,17 @@
             <h3>Software Development Projects</h3>
             <div class="development-projects-container">
                 <div class="development-project">
+                    <div class="project-information">
+                        <div class="project-information-details">
+                            <h5 class="project-information-title">CV Builder</h5>
+                            <p class="project-information-description">Duis ex nisi anim aliquip ad consequat cupidatat proident id officia magna.</p>
+                            <div class="project-preview">
+                                <a href="">Live Preview</a>
+                                <p>|</p>
+                                <a href="">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
                     <img src="../images/Gallery Thumbnails/Development/CV-App.png" alt="">
                 </div>
                 <div class="development-project">
@@ -39,6 +51,17 @@
             <h3>Graphic Design Projects</h3>
             <div class="design-projects-container">
                 <div class="design-project">
+                    <div class="design-project-information">
+                        <div class="design-project-information-details">
+                            <h5 class="design-project-information-title">CV Builder</h5>
+                            <p class="design-project-information-description">Duis ex nisi anim aliquip ad consequat cupidatat proident id officia magna.</p>
+                            <div class="design-project-preview">
+                                <a href="">Live Preview</a>
+                                <p>|</p>
+                                <a href="">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
                     <img src="../images/Gallery Thumbnails/Design/Entropy-Rebrand.png" alt="">
                 </div>
                 <div class="design-project">
@@ -52,20 +75,41 @@
         <div class="image-gallery">
             <h3>Artwork Gallery</h3>
             <div class="artwork-gallery-container">
-                <div class="artwork">
-                    <img src="../images/Gallery Thumbnails/Artwork/PATHS.png" alt="">
+                <div class="artwork-gallery-column">
+                    <div class="artwork" id="artwork-item-1">
+                        <div class="artwork-information">
+                            <div class="artwork-information-details">
+                                <h5 class="artwork-information-title">CV Builder</h5>
+                                <p class="artwork-information-description">Duis ex nisi anim aliquip ad consequat cupidatat proident id officia magna.</p>
+                            </div>
+                        </div>
+                        <img src="../images/Gallery Thumbnails/Artwork/PATHS.png" alt="">
+                    </div>
+                    <div class="artwork" id="artwork-item-4"> 
+                        <img src="../images/Gallery Thumbnails/Artwork/Kanye West - DONDA joined.png" alt="">
+                    </div>
                 </div>
-                <div class="artwork">
-                    <img src="../images/Gallery Thumbnails/Artwork/Code-Geass-Painting-Final.png" alt="">
+                <div class="artwork-gallery-column">
+                    <div class="artwork" id="artwork-item-2">
+                        <img src="../images/Gallery Thumbnails/Artwork/Code-Geass-Painting-Final.png" alt="">
+                    </div>
                 </div>
-                <div class="artwork">
-                    <img src="../images/Gallery Thumbnails/Artwork/Stranger-Things-3-Poster.png" alt="">
-                </div>
-                <div class="artwork">
-                    <img src="../images/Gallery Thumbnails/Artwork/Kanye West - DONDA joined.png" alt="">
-                </div>
-                <div class="artwork">
-                    <img src="../images/Gallery Thumbnails/Artwork/Interframe - everything will be ok.png" alt="">
+                <div class="artwork-gallery-column">
+                    <div class="artwork" id="artwork-item-3">
+                        <img src="../images/Gallery Thumbnails/Artwork/Stranger-Things-3-Poster.png" alt="">
+                    </div>
+                    <div class="artwork" id="artwork-item-5">
+                        <div class="artwork-information">
+                            <button class="artwork-enlarge-button">
+                                Click to Enlarge
+                            </button>
+                            <div class="artwork-information-details">
+                                <h5 class="artwork-information-title">Everything Will Be Ok.</h5>
+                                <p class="artwork-information-description">An album art concept created for revolutionary musician and composer 'Interframe'</p>
+                            </div>
+                        </div>
+                        <img src="../images/Gallery Thumbnails/Artwork/Interframe - everything will be ok.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
