@@ -147,9 +147,9 @@ body {
 }
 
 .artwork-gallery-column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 15px;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 15px;
 }
 
 .artwork img {
@@ -162,7 +162,7 @@ body {
 .project-information,
 .design-project-information {
   /* background: linear-gradient(to bottom, transparent 0%, rgba(2, 2, 5, 0.795) 100%); */
-  backdrop-filter: blur(0.2em);
+  backdrop-filter: blur(0.4em);
   background: #03050aad;
   height: 100%;
   width: 100%;
@@ -181,7 +181,7 @@ body {
 }
 
 .artwork-information {
-  backdrop-filter: blur(0.2em);
+  backdrop-filter: blur(0.4em);
   background: #03050aad;
   height: 100%;
   width: 100%;
@@ -204,10 +204,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
-  background:none;
+  background: none;
   border-radius: 100px;
   padding: 6px 12px;
-  color:rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
   font-size: 0.6em;
   transition: transform 0.2s ease;
 }
@@ -223,6 +223,7 @@ body {
   position: absolute;
   bottom: 1.5em;
   left: 1.5em;
+  right: 1.5em;
 }
 
 .artwork-information-details {
@@ -257,15 +258,58 @@ body {
 .project-information .project-preview a,
 .project-information .project-preview p,
 .design-project-information .design-project-preview a,
-.design-project-information .design-project-preview p{
+.design-project-information .design-project-preview p {
   color: rgb(238, 238, 238);
   font-size: 0.8em;
   text-decoration: underline;
 }
 
-.project-information .project-preview a:hover 
-.design-project-information .design-project-preview a:hover {
+.project-information
+  .project-preview
+  a:hover
+  .design-project-information
+  .design-project-preview
+  a:hover {
   cursor: pointer;
+}
+
+.gallery-enlarge-container {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background-color: rgba(3, 5, 10, 0.788);
+  backdrop-filter: blur(3rem);
+  overflow: hidden;
+}
+
+.gallery-enlarge-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#gallery-enlarge-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 1em;
+  transition: transform 0.2s ease;
+}
+
+#gallery-enlarge-close:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.gallery-enlarge-image img {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 footer {
