@@ -1,4 +1,11 @@
 export const softwareProjects = {
+    harmoni: {
+        previewImg: "../images/Gallery Thumbnails/Development/Harmoni.png",
+        title: "Harmoni",
+        description: "An AI Based Health Assistant, created in a team of 4 for a senior capstone project.",
+        preview: "",
+        repo: "",
+    },
     cvBuilder: {
         previewImg: "../images/Gallery Thumbnails/Development/CV-App.png",
         title: "React CV Builder",
@@ -19,7 +26,12 @@ export const softwareProjects = {
         description: "A subject organized CRUD task list where topics are assigned a randomly generated colour identifier.",
         preview: "",
         repo: "",
-    }
+    },
+    restaurantLandingPage: {
+        previewImg: "../images/Gallery Thumbnails/Development/Restaurant-Landing-Page.png",
+        title: "Restaurant Landing Page",
+        description: "A landing page built using a local restaurant as reference.",
+    },
 }
 
 export const designProjects = {
@@ -41,6 +53,12 @@ export const designProjects = {
         description: "Built on top of Rush Gamings core values to invoke a streetwear inspired visual identity.",
         behanceLink: "https://www.behance.net/gallery/116128699/Rush-Gaming",
     },
+    north: {
+        previewImg: "../images/Gallery Thumbnails/Design/North-Rebrand.png",
+        title: "Northern Forces Rebrand",
+        description: "A fresh rebranding of gaming team Northern Forces centered around custom illustrations.",
+        behanceLink: "https://www.behance.net/gallery/119507687/Northern-Forces-2021",
+    }
 }
 
 export const artwork = {
@@ -59,13 +77,8 @@ export const artwork = {
         title: "The Last of Us 2 Poster Concept",
         description: "A poster concept for The Last of Us 2, inspired by the box art of the first installment."
     },
-    strangerThings: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Stranger-Things-3-Poster.png",
-        title: "Stranger Things 3 Poster Concept",
-        description: "A poster concept for Stranger Things Season 3, inspired by elements of the show."
-    },
     donda: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Kanye West - DONDA joined.png",
+        previewImg: "../images/Gallery Thumbnails/Artwork/DONDA Front.png",
         title: "Kanye West - DONDA Album Art Concept",
         description: "Inspired by various elements of the album and the marketing campaign."
     },
@@ -73,6 +86,11 @@ export const artwork = {
         previewImg: "../images/Gallery Thumbnails/Artwork/Interframe - everything will be ok.png",
         title: "Everything Will Be Ok.",
         description: "An album art concept created for revolutionary musician and composer 'Interframe'"
+    },
+    strangerThings: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Stranger-Things-3-Poster.png",
+        title: "Stranger Things 3 Poster Concept",
+        description: "A poster concept for Stranger Things Season 3, inspired by elements of the show."
     },
     kyleLowryPoster: {
         previewImg: "../images/Gallery Thumbnails/Artwork/Kyle-Lowry-Poster.png",
@@ -94,6 +112,26 @@ export const artwork = {
         title: "London Royal Ravens Victory",
         description: "A match result graphic concept created for competitive gaming organization London Royal Ravens."
     },
+    northCSGO: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Northern-Forces-CSGO-Scorecard.png",
+        title: "North CS Scorecard",
+        description: "A scorecard graphic created for the Northern Forces Counterstrike team."
+    },
+    skinbaron: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Skin-Baron-Results.png",
+        title: "Team Skinbaron Scorecard",
+        description: "A scorecard graphic Team Skinbaron."
+    },
+    bennyContest1: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Benny-Contest3.png",
+        title: "Benny's Spooky Edit War",
+        description: "My submission to Benny Productions Halloween contest."
+    },
+    huntsmenEnvoy: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/LRR-Victory.png",
+        title: "Be The Hunter",
+        description: "A poster concept created for Envoy of the Chicago Huntsmen."
+    }
 }
 
 // export { softwareProjects, designProjects, artwork }

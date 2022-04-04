@@ -93,7 +93,8 @@ function renderDesignProjects() {
         projectBehanceLink.target = "_blank";
 
         projectLinksContainer.append(projectBehanceLink);
-        projectInfo.append(projectInfoTitle, projectInfoDescription, projectLinksContainer);
+        projectInfoDetails.append(projectInfoTitle, projectInfoDescription, projectLinksContainer);
+        projectInfo.append(projectInfoDetails);
 
         projectContainer.append(projectInfo, projectThumbnail);
         container.append(projectContainer);
