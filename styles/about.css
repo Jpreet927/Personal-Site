@@ -52,6 +52,30 @@ body {
   transition: all 0.2s ease;
 }
 
+.about-hamburger {
+  transition: transform 0.2s ease;
+  display: none;
+  z-index: 100;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.2 ease;
+  background-color: rgb(238, 238, 238);
+}
+
+.about-hamburger:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.about-hamburger:focus {
+  outline: none;
+}
+
 .current-page {
   font-weight: 700;
   background-image: linear-gradient(to right, #409dea, #7fe3f9);
@@ -148,4 +172,95 @@ footer {
 footer p {
     font-size: 0.8em;
     color: rgb(174, 183, 190);
+}
+
+@media all and (max-width: 1400px) {
+  .about-container {
+    padding: 5em 25em;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .about-container {
+    padding: 5em 20em;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .about-container {
+    padding: 5em 15em;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .about-body {
+    padding: 3em 5em;
+  }
+
+  .about-container {
+    padding: 5em 10em;
+  }
+
+  .about-navbar ul {
+    display: none;
+  }
+
+  .about-navbar ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  .about-navbar ul.visible {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../images/Section-Background.png");
+    transition: 0.2s; 
+    z-index: 90;
+  }
+
+  .about-hamburger {
+    display: block;
+  }
+
+  .about-hamburger .bar {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .about-hamburger.visible .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .about-hamburger.visible .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .about-hamburger.visible .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(315deg);
+  }
+
+  .about-navbar {
+    padding: 5em 5em;
+  }
+
+  @media all and (max-width: 640px) {
+    .about-container {
+      padding: 5em 5em;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .about-container {
+      padding: 5em 3em;
+    }
+
+    .about-navbar {
+      padding: 5em 3em;
+    }
+  }
 }

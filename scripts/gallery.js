@@ -216,6 +216,13 @@ enlargeCloseBtn.addEventListener('click', (e) => {
     } 
 });
 
+let hamburgerMenu = document.querySelector(".gallery-hamburger");
+let navbar = document.querySelector(".gallery-navbar ul");
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle("visible");
+    navbar.classList.toggle("visible");
+});
+
 (function renderProjects() {
     renderSoftwareProjects();
     renderDesignProjects();

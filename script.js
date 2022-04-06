@@ -15,7 +15,6 @@ tl.from('.main__container', { scale: 1.15, duration: 1, opacity: 0 })
     .from('#behance-logo', { y: 50, opacity: 0, duration: 0.5 }, "-=0.4")
     .from('.main__social-line', { height: 0, duration: 1.25 }, "-=1")
 
-
 // Callback Functions
 
 function toggleNavbarBackground() {
@@ -24,6 +23,13 @@ function toggleNavbarBackground() {
 }
 
 // Event Listeners
+let hamburgerMenu = document.querySelector(".main__hamburger");
+let navbar = document.querySelector(".main__navbar ul");
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle("visible");
+    navbar.classList.toggle("visible");
+})
+
 
 window.addEventListener('scroll', () => {
     toggleNavbarBackground()
