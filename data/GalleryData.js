@@ -117,6 +117,11 @@ export const artwork = {
         title: "North CS Scorecard",
         description: "A scorecard graphic created for the Northern Forces Counterstrike team."
     },
+    huntsmenEnvoy: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Envoy-Poster.png",
+        title: "Be The Hunter",
+        description: "A poster concept created for Envoy of the Chicago Huntsmen."
+    },
     skinbaron: {
         previewImg: "../images/Gallery Thumbnails/Artwork/Skin-Baron-Results.png",
         title: "Team Skinbaron Scorecard",
@@ -127,10 +132,10 @@ export const artwork = {
         title: "Benny's Spooky Edit War",
         description: "My submission to Benny Productions Halloween contest."
     },
-    huntsmenEnvoy: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/LRR-Victory.png",
-        title: "Be The Hunter",
-        description: "A poster concept created for Envoy of the Chicago Huntsmen."
+    northHeader: {
+        previewImg: "../images/Gallery Thumbnails/Artwork/Northern-Forces-Header.png",
+        title: "Northern Forces",
+        description: "A social media banner created for the Northern Forces Twitter Account."
     }
 }
 

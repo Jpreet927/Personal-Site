@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/Section-Background.png");
+  /* background-position: center; */
+  background-size: cover;
+  position: relative;
+}
+
+.about-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 10em;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+}
+
+.navbar-background {
+  background-color: rgba(3, 7, 22, 0.815);
+  backdrop-filter: blur(2rem);
+}
+
+.about-navbar img {
+  height: 16px;
+}
+
+.about-navbar ul {
+  display: flex;
+  gap: 5em;
+}
+
+.about-navbar ul li {
+  list-style: none;
+  /* transition: background-image 0.2s ease; */
+}
+
+.about-navbar ul li a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  transition: all 0.2s ease;
+}
+
+.current-page {
+  font-weight: 700;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about-navbar ul li a:hover {
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about-header-name {
+    font-size: 3em;
+}
+
+.about-header-subtitle {
+    color: #aeb7be;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.about-header-subtitle span {
+    color: #7fe3f9;
+}
+
+.about-container {
+    color: rgb(238, 238, 238);
+    padding: 5em 30em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.about-container p {
+    line-height: 1.5em;
+}
+
+.about-design,
+.about-development {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.about-links {
+    display: flex;
+    gap: 0.6em;
+}
+
+.about-link {
+    display: flex;
+    /* justify-content: center; */
+    align-items:center;
+    gap: 0.4em;
+}
+
+.about-link img {
+    max-height: 1em;
+}
+
+.about-link a {
+    font-family: "Roboto", sans-serif;
+    color: rgb(174, 183, 190);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/* .about-design {
+    background-image: url("../images/Misc/transform-interface.png");
+    background-size: cover;
+
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    background-color: #0a0e1e;
+}
+  
+footer p {
+    font-size: 0.8em;
+    color: rgb(174, 183, 190);
+}

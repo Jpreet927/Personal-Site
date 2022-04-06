@@ -54,6 +54,19 @@ function renderSoftwareProjects() {
         projectInfoContainer.append(projectInfoDetails);
         projectContainer.append(projectInfoContainer, projectThumbnail);
         container.append(projectContainer);
+
+        let shadowColour = "";
+        Vibrant.from(project.previewImg).getPalette((err, palette) => {
+            let rgb = palette.Muted._rgb;
+            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        }).then(
+            projectContainer.addEventListener('mouseenter', () => {
+                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+            }),
+            projectContainer.addEventListener('mouseleave', () => {
+                projectContainer.style = "";
+            })
+        );
     }
 }
 
@@ -70,6 +83,8 @@ function renderDesignProjects() {
         let projectThumbnail = document.createElement("img");
         projectThumbnail.src = project.previewImg;
         projectThumbnail.alt = `${project.title} thumbnail.`;
+
+        let projectThumbnailShadow = projectThumbnail;
 
         let projectInfo = document.createElement("div");
         projectInfo.classList.add("design-project-information");
@@ -98,6 +113,19 @@ function renderDesignProjects() {
 
         projectContainer.append(projectInfo, projectThumbnail);
         container.append(projectContainer);
+
+        let shadowColour = "";
+        Vibrant.from(project.previewImg).getPalette((err, palette) => {
+            let rgb = palette.Vibrant._rgb;
+            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        }).then(
+            projectContainer.addEventListener('mouseenter', () => {
+                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+            }),
+            projectContainer.addEventListener('mouseleave', () => {
+                projectContainer.style = "";
+            })
+        );
     }
 }
 
@@ -109,59 +137,72 @@ function renderArtwork() {
     let counter = 0;
 
     for (let key in artwork) {
-        let image = artwork[key];
+        let project = artwork[key];
 
-        let imageContainer = document.createElement("div");
-        imageContainer.classList.add("artwork");
+        let projectContainer = document.createElement("div");
+        projectContainer.classList.add("artwork");
 
-        let imageThumbnail = document.createElement("img");
-        imageThumbnail.src = image.previewImg;
-        imageThumbnail.alt = `${image.title} thumbnail.`;
+        let projectThumbnail = document.createElement("img");
+        projectThumbnail.src = project.previewImg;
+        projectThumbnail.alt = `${project.title} thumbnail.`;
 
-        let imageEnlargeBtn = document.createElement("button");
-        imageEnlargeBtn.classList.add("artwork-enlarge-button");
-        imageEnlargeBtn.textContent = "Click To Enlarge";
+        let projectEnlargeBtn = document.createElement("button");
+        projectEnlargeBtn.classList.add("artwork-enlarge-button");
+        projectEnlargeBtn.textContent = "Click To Enlarge";
 
-        let imageInformationContainer = document.createElement("div");
-        imageInformationContainer.classList.add("artwork-information");
+        let projectInformationContainer = document.createElement("div");
+        projectInformationContainer.classList.add("artwork-information");
 
-        let imageInformation = document.createElement("div");
-        imageInformation.classList.add("artwork-information-details");
+        let projectInformation = document.createElement("div");
+        projectInformation.classList.add("artwork-information-details");
 
-        let imageInformationTitle = document.createElement("h5");
-        imageInformationTitle.classList.add("artwork-information-title");
-        imageInformationTitle.textContent = image.title;
+        let projectInformationTitle = document.createElement("h5");
+        projectInformationTitle.classList.add("artwork-information-title");
+        projectInformationTitle.textContent = project.title;
 
-        let imageInformationDescription = document.createElement("p");
-        imageInformationDescription.classList.add("artwork-information-description");
-        imageInformationDescription.textContent = image.description;
+        let projectInformationDescription = document.createElement("p");
+        projectInformationDescription.classList.add("artwork-information-description");
+        projectInformationDescription.textContent = project.description;
 
-        imageInformation.append(imageInformationTitle, imageInformationDescription);
-        imageInformationContainer.append(imageEnlargeBtn, imageInformation);
-        imageContainer.append(imageInformationContainer, imageThumbnail);
+        projectInformation.append(projectInformationTitle, projectInformationDescription);
+        projectInformationContainer.append(projectEnlargeBtn, projectInformation);
+        projectContainer.append(projectInformationContainer, projectThumbnail);
 
-        imageEnlargeBtn.addEventListener('click', () => {
+        projectEnlargeBtn.addEventListener('click', () => {
             localStorage.setItem('scrollPosition', window.scrollY);
 
-            let enlargeImageContainer = document.querySelector(".gallery-enlarge-image");
-            let enlargedImage = document.createElement("img");
-            enlargedImage.src = image.previewImg;
+            let enlargeprojectContainer = document.querySelector(".gallery-enlarge-project");
+            let enlargedproject = document.createElement("img");
+            enlargedproject.src = project.previewImg;
 
             enlargeContainer.style.display = "block";
             galleryContainer.style.display = "none";
-            enlargeImageContainer.innerHTML = "";
-            enlargeImageContainer.appendChild(enlargedImage);
+            enlargeprojectContainer.innerHTML = "";
+            enlargeprojectContainer.appendChild(enlargedproject);
         })
 
         if (counter % 3 == 0) {
-            column1.appendChild(imageContainer);
+            column1.appendChild(projectContainer);
         } else if (counter % 3 == 1) {
-            column2.appendChild(imageContainer);
+            column2.appendChild(projectContainer);
         } else {
-            column3.appendChild(imageContainer);
+            column3.appendChild(projectContainer);
         }
 
         counter++;
+
+        let shadowColour = "";
+        Vibrant.from(project.previewImg).getPalette((err, palette) => {
+            let rgb = palette.Muted._rgb;
+            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        }).then(
+            projectContainer.addEventListener('mouseenter', () => {
+                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+            }),
+            projectContainer.addEventListener('mouseleave', () => {
+                projectContainer.style = "";
+            })
+        );
     }
 }
 

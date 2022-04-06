@@ -106,6 +106,7 @@ body {
 .design-project,
 .artwork {
   width: 100%;
+  height: fit-content;
   margin-bottom: 24px;
   overflow: hidden;
   position: relative;

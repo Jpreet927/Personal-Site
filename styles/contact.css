@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/Section-Background.png");
+  /* background-position: center; */
+  background-size: cover;
+  position: relative;
+}
+
+.contact-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 10em;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+}
+
+.navbar-background {
+  background-color: rgba(3, 7, 22, 0.815);
+  backdrop-filter: blur(2rem);
+}
+
+.contact-navbar img {
+  height: 16px;
+}
+
+.contact-navbar ul {
+  display: flex;
+  gap: 5em;
+}
+
+.contact-navbar ul li {
+  list-style: none;
+  /* transition: background-image 0.2s ease; */
+}
+
+.contact-navbar ul li a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  transition: all 0.2s ease;
+}
+
+.current-page {
+  font-weight: 700;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.contact-navbar ul li a:hover {
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    background-color: #0a0e1e;
+  }
+  
+  footer p {
+    font-size: 0.8em;
+    color: rgb(174, 183, 190);
+  }

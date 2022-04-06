@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Jpreet927/Personal-Site#readme",
   "dependencies": {
+    "node-vibrant": "^3.2.1-alpha.1",
     "smooth-scrollbar": "^8.7.4"
   }
 }
