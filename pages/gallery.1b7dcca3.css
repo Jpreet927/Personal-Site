@@ -1,0 +1,413 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-image: url("../Section-Background.c8c38b04.png");
+  background-size: cover;
+  position: relative;
+}
+
+.gallery-navbar {
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 10em;
+  transition: -webkit-backdrop-filter .5s, backdrop-filter .5s, background-color .5s;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-background {
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+  background-color: #030716d0;
+}
+
+.gallery-navbar img {
+  height: 16px;
+}
+
+.gallery-navbar ul {
+  gap: 5em;
+  display: flex;
+}
+
+.gallery-navbar ul li {
+  list-style: none;
+}
+
+.gallery-navbar ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.gallery-hamburger {
+  z-index: 100;
+  transition: transform .2s;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  transition: all .2 ease;
+  background-color: #eee;
+  margin: 5px auto;
+  display: block;
+}
+
+.gallery-hamburger:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.gallery-hamburger:focus {
+  outline: none;
+}
+
+.current-page {
+  color: #0000;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.gallery-navbar ul li a:hover {
+  color: #0000;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.gallery-body {
+  flex-direction: column;
+  gap: 3em;
+  padding: 3em 15em;
+  display: flex;
+}
+
+.gallery-body h3 {
+  color: #0000;
+  background-image: linear-gradient(to right, #409dea, #7fe3f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1em;
+}
+
+.gallery-title {
+  color: #eee;
+  font-size: 3em;
+}
+
+.development-projects-container {
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+.development-project, .design-project, .artwork {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0;
+  transition: all .2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.artwork {
+  margin-bottom: 24px;
+}
+
+.development-projects-container img, .design-projects-container img {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.development-project:hover img, .design-project:hover img, .artwork:hover img {
+  transform: scale(1.05);
+}
+
+.development-project:hover .project-information, .design-project:hover .design-project-information, .artwork:hover .artwork-information {
+  display: block;
+}
+
+.development-project .project-information:hover, .design-project .design-project-information:hover, .artwork .artwork-information:hover {
+  opacity: 1;
+}
+
+.design-projects-container {
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+.artwork-gallery-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.artwork-gallery-column {
+  max-width: 33%;
+  flex: 33%;
+  padding: 0 15px;
+}
+
+.artwork img {
+  width: 100%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.project-information, .design-project-information {
+  -webkit-backdrop-filter: blur(.4em);
+  backdrop-filter: blur(.4em);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  -o-transition: all .2s ease;
+  background: #03050aad;
+  transition: all .2s;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.artwork-information {
+  -webkit-backdrop-filter: blur(.4em);
+  backdrop-filter: blur(.4em);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  -o-transition: all .2s ease;
+  opacity: 0;
+  background: #03050aad;
+  transition: all .2s;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.artwork-enlarge-button {
+  color: #eee;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-size: .6em;
+  transition: transform .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.artwork-enlarge-button:hover {
+  cursor: pointer;
+}
+
+.project-information-details, .design-project-information-details, .artwork-information-details {
+  position: absolute;
+  bottom: 1.5em;
+  left: 1.5em;
+  right: 1.5em;
+}
+
+.project-information .project-information-title, .design-project-information .design-project-information-title, .artwork-information .artwork-information-title {
+  color: #eee;
+  margin-bottom: .6em;
+  font-size: 1.2em;
+}
+
+.project-information .project-information-description, .design-project-information .design-project-information-description, .artwork-information .artwork-information-description {
+  color: #eee;
+  margin-bottom: .6em;
+  font-size: .8em;
+}
+
+.project-information .project-preview, .design-project-information .design-project-preview {
+  gap: .6em;
+  display: flex;
+}
+
+.project-information .project-preview a, .project-information .project-preview p, .design-project-information .design-project-preview a, .design-project-information .design-project-preview p {
+  color: #eee;
+  font-size: .8em;
+  text-decoration: underline;
+}
+
+.project-information .project-preview a:hover .design-project-information .design-project-preview a:hover {
+  cursor: pointer;
+}
+
+.gallery-enlarge-container {
+  height: 100vh;
+  width: 100%;
+  z-index: 150;
+  -webkit-backdrop-filter: blur(3rem);
+  backdrop-filter: blur(3rem);
+  background-image: url("../Section-Background.c8c38b04.png");
+  background-position: center;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.gallery-enlarge-image {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#gallery-enlarge-close {
+  width: 1em;
+  transition: transform .2s;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+#gallery-enlarge-close:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.gallery-enlarge-image img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+footer {
+  background-color: #0a0e1e;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  display: flex;
+}
+
+footer p {
+  color: #aeb7be;
+  font-size: .8em;
+}
+
+@media (max-width: 1200px) {
+  .gallery-body {
+    padding: 3em 10em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .design-projects-container, .development-projects-container {
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+
+  .artwork-gallery-column {
+    max-width: 50%;
+    flex: 50%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .gallery-body {
+    padding: 3em 5em;
+  }
+
+  .gallery-navbar ul {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .gallery-navbar ul.visible {
+    height: 100vh;
+    width: 100vw;
+    z-index: 90;
+    background-image: url("../Section-Background.c8c38b04.png");
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .gallery-hamburger {
+    display: block;
+  }
+
+  .gallery-hamburger .bar {
+    transition: transform .5s, opacity .5s;
+  }
+
+  .gallery-hamburger.visible .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .gallery-hamburger.visible .bar:nth-child(1) {
+    transform: translateY(8px)rotate(45deg);
+  }
+
+  .gallery-hamburger.visible .bar:nth-child(3) {
+    transform: translateY(-8px)rotate(315deg);
+  }
+
+  .gallery-navbar {
+    padding: 5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .design-projects-container, .development-projects-container {
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+  }
+
+  .artwork-gallery-column {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0 15px;
+  }
+
+  .gallery-body {
+    padding: 1em 3em;
+  }
+
+  .gallery-navbar {
+    padding: 5em 3em;
+  }
+}
+
+/*# sourceMappingURL=gallery.1b7dcca3.css.map */
