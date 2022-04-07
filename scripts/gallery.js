@@ -55,18 +55,18 @@ function renderSoftwareProjects() {
         projectContainer.append(projectInfoContainer, projectThumbnail);
         container.append(projectContainer);
 
-        let shadowColour = "";
-        Vibrant.from(project.previewImg).getPalette((err, palette) => {
-            let rgb = palette.Muted._rgb;
-            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
-        }).then(
-            projectContainer.addEventListener('mouseenter', () => {
-                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
-            }),
-            projectContainer.addEventListener('mouseleave', () => {
-                projectContainer.style = "";
-            })
-        );
+        // let shadowColour = "";
+        // Vibrant.from(project.previewImg).getPalette((err, palette) => {
+        //     let rgb = palette.Muted._rgb;
+        //     shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        // }).then(
+        //     projectContainer.addEventListener('mouseenter', () => {
+        //         projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+        //     }),
+        //     projectContainer.addEventListener('mouseleave', () => {
+        //         projectContainer.style = "";
+        //     })
+        // );
     }
 }
 
@@ -114,18 +114,18 @@ function renderDesignProjects() {
         projectContainer.append(projectInfo, projectThumbnail);
         container.append(projectContainer);
 
-        let shadowColour = "";
-        Vibrant.from(project.previewImg).getPalette((err, palette) => {
-            let rgb = palette.Vibrant._rgb;
-            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
-        }).then(
-            projectContainer.addEventListener('mouseenter', () => {
-                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
-            }),
-            projectContainer.addEventListener('mouseleave', () => {
-                projectContainer.style = "";
-            })
-        );
+        // let shadowColour = "";
+        // Vibrant.from(project.previewImg).getPalette((err, palette) => {
+        //     let rgb = palette.Vibrant._rgb;
+        //     shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        // }).then(
+        //     projectContainer.addEventListener('mouseenter', () => {
+        //         projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+        //     }),
+        //     projectContainer.addEventListener('mouseleave', () => {
+        //         projectContainer.style = "";
+        //     })
+        // );
     }
 }
 
@@ -191,18 +191,18 @@ function renderArtwork() {
 
         counter++;
 
-        let shadowColour = "";
-        Vibrant.from(project.previewImg).getPalette((err, palette) => {
-            let rgb = palette.Muted._rgb;
-            shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
-        }).then(
-            projectContainer.addEventListener('mouseenter', () => {
-                projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
-            }),
-            projectContainer.addEventListener('mouseleave', () => {
-                projectContainer.style = "";
-            })
-        );
+        // let shadowColour = "";
+        // Vibrant.from(project.previewImg).getPalette((err, palette) => {
+        //     let rgb = palette.Muted._rgb;
+        //     shadowColour = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.2)`;
+        // }).then(
+        //     projectContainer.addEventListener('mouseenter', () => {
+        //         projectContainer.style.boxShadow = `0px 24px 48px ${shadowColour}`;
+        //     }),
+        //     projectContainer.addEventListener('mouseleave', () => {
+        //         projectContainer.style = "";
+        //     })
+        // );
     }
 }
 
