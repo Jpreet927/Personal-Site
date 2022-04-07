@@ -63,80 +63,80 @@ export const designProjects = {
 
 export const artwork = {
     paths: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/PATHS.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/PATHS.png",
         title: "PATHS",
         description: "A piece inspired by Attack on Titan."
     },
     codeGeass: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Code-Geass-Painting-Final.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Code-Geass-Painting-Final.png",
         title: "Emporer Lelouch",
         description: "A piece inspured by Code Geass."
     },
     lastOfUs2: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Last-of-Us-2-Poster-2-updated.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Last-of-Us-2-Poster-2-updated.png",
         title: "The Last of Us 2 Poster Concept",
         description: "A poster concept for The Last of Us 2, inspired by the box art of the first installment."
     },
     donda: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/DONDA Front.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/DONDA Front.png",
         title: "Kanye West - DONDA Album Art Concept",
         description: "Inspired by various elements of the album and the marketing campaign."
     },
     interframe: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Interframe - everything will be ok.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Interframe - everything will be ok.png",
         title: "Everything Will Be Ok.",
         description: "An album art concept created for revolutionary musician and composer 'Interframe'"
     },
     strangerThings: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Stranger-Things-3-Poster.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Stranger-Things-3-Poster.png",
         title: "Stranger Things 3 Poster Concept",
         description: "A poster concept for Stranger Things Season 3, inspired by elements of the show."
     },
     kyleLowryPoster: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Kyle-Lowry-Poster.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Kyle-Lowry-Poster.png",
         title: "Kyle Lowry, GROAT",
         description: "A tribute to the former Toronto Raptor, Kyle Lowry."
     },
     empireScore: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Dallas-Empire-Rome-3.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Dallas-Empire-Rome-3.png",
         title: "Dallas Empire Scorecard",
         description: "A scorecard graphic concept created for competitive gaming organization Dallas Empire."
     },
     geurillasGameday: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/LA-Guerrilas-Gameday.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/LA-Guerrilas-Gameday.png",
         title: "LA Guerillas Gameday",
         description: "A gameday graphic concept created for competitive gaming organization LA Guerillas."
     },
     ravensScore: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/LRR-Victory.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/LRR-Victory.png",
         title: "London Royal Ravens Victory",
         description: "A match result graphic concept created for competitive gaming organization London Royal Ravens."
     },
     northCSGO: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Northern-Forces-CSGO-Scorecard.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Northern-Forces-CSGO-Scorecard.png",
         title: "North CS Scorecard",
         description: "A scorecard graphic created for the Northern Forces Counterstrike team."
     },
     huntsmenEnvoy: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Envoy-Poster.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Envoy-Poster.png",
         title: "Be The Hunter",
         description: "A poster concept created for Envoy of the Chicago Huntsmen."
     },
     skinbaron: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Skin-Baron-Results.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Skin-Baron-Results.png",
         title: "Team Skinbaron Scorecard",
         description: "A scorecard graphic Team Skinbaron."
     },
     bennyContest1: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Benny-Contest3.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Benny-Contest3.png",
         title: "Benny's Spooky Edit War",
         description: "My submission to Benny Productions Halloween contest."
     },
     northHeader: {
-        previewImg: "../images/Gallery Thumbnails/Artwork/Northern-Forces-Header.png",
+        previewImg: "../images/Gallery Thumbnails/Compressed Images/Northern-Forces-Header.png",
         title: "Northern Forces",
         description: "A social media banner created for the Northern Forces Twitter Account."
     }
 }
 
-// export { softwareProjects, designProjects, artwork }
+// export { softwareProjects, designProjects, Compressed Images }

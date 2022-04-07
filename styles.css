@@ -110,7 +110,7 @@
   color: rgb(238, 238, 238);
 }
 
-.main__body h1 {
+.main__body-header {
   font-size: 4em;
   margin-bottom: 0.2em;
 }
@@ -534,6 +534,14 @@ footer p {
 @media all and (max-width: 600px) {
   .main__navbar {
     padding: 5em 3em;
+  }
+
+  .main__body-header {
+    font-size: 3em;
+  }
+
+  .main__body-subtitle {
+    font-size: 0.8em;
   }
 
   .main__social-icons {

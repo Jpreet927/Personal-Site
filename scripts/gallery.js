@@ -171,7 +171,7 @@ function renderArtwork() {
         projectEnlargeBtn.addEventListener('click', () => {
             localStorage.setItem('scrollPosition', window.scrollY);
 
-            let enlargeprojectContainer = document.querySelector(".gallery-enlarge-project");
+            let enlargeprojectContainer = document.querySelector(".gallery-enlarge-image");
             let enlargedproject = document.createElement("img");
             enlargedproject.src = project.previewImg;
 
@@ -179,7 +179,7 @@ function renderArtwork() {
             galleryContainer.style.display = "none";
             enlargeprojectContainer.innerHTML = "";
             enlargeprojectContainer.appendChild(enlargedproject);
-        })
+        });
 
         if (counter % 3 == 0) {
             column1.appendChild(projectContainer);
