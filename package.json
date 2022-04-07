@@ -5,7 +5,11 @@
   "type": "module",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build",
+    "dev": "parcel index.html",
+    "prod": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,13 @@
   "bugs": {
     "url": "https://github.com/Jpreet927/Personal-Site/issues"
   },
-  "homepage": "https://github.com/Jpreet927/Personal-Site#readme",
+  "homepage": "https://github.com/Jpreet927/Personal-Site",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "node-vibrant": "^3.2.1-alpha.1",
     "smooth-scrollbar": "^8.7.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
   }
 }
