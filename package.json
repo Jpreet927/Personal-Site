@@ -5,12 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "build": "parcel build --public-url ./",
-    "dev": "parcel index.html --public-url ./",
-    "prod": "parcel build index.html --public-url ./",
-    "gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url https://github.com/Jpreet927/Personal-Site",
+    "start": "parcel src/index.html",
+    "prod": "parcel build src/index.html --public-url /Personal-Site",
+    "predeploy": "rm -rf dist/ && parcel build src/index.html",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -30,6 +27,8 @@
     "smooth-scrollbar": "^8.7.4"
   },
   "devDependencies": {
-    "parcel": "^2.4.1"
+    "parcel": "^2.4.1",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
   }
 }

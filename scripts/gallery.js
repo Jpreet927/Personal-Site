@@ -7,7 +7,6 @@ let galleryContainer = document.querySelector(".gallery-main-container");
 // render software projects
 function renderSoftwareProjects() {
     let container = document.querySelector(".development-projects-container");
-    console.log("if ur reading this i love u")
     
     for (let key in softwareProjects) {
         let project = softwareProjects[key];
