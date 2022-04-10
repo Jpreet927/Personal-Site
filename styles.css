@@ -226,6 +226,15 @@
   gap: 2em;
 }
 
+.project-tech-used {
+  display: flex;
+  gap: 1em;
+}
+
+.project-tech-used img {
+  height: 1.5em;
+}
+
 .project-link {
   display: flex;
   align-items: center;
@@ -367,6 +376,13 @@
 
 .contact__icons-container img {
   height: 1em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.contact__icons-container img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .contact__container button {
