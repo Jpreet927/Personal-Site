@@ -3,34 +3,36 @@ export const softwareProjects = {
         previewImg: "../images/Gallery Thumbnails/Development/Harmoni.png",
         title: "Harmoni",
         description: "An AI Based Health Assistant, created in a team of 4 for a senior capstone project.",
-        preview: "",
+        preview: "https://youtu.be/b8yH6oT6mlI",
         repo: "",
     },
     cvBuilder: {
         previewImg: "../images/Gallery Thumbnails/Development/CV-App.png",
         title: "React CV Builder",
         description: "A platform to input personal info and work history to generate a Resume.",
-        preview: "",
-        repo: "",
+        preview: "https://jpreet927.github.io/cv-project/",
+        repo: "https://github.com/Jpreet927/cv-project",
     },
     weatherApp: {
         previewImg: "../images/Gallery Thumbnails/Development/Weather-App.png",
         title: "Dynamic Weather App",
         description: "A webapp that fetches weather data from the Open Weather API with dynamic icons and background, reflecting the current climate.",
         preview: "",
-        repo: "",
+        repo: "https://github.com/Jpreet927/weather-app",
     },
     todoList: {
         previewImg: "../images/Gallery Thumbnails/Development/To-Do-List.png",
         title: "To-Do List",
         description: "A subject organized CRUD task list where topics are assigned a randomly generated colour identifier.",
         preview: "",
-        repo: "",
+        repo: "https://github.com/Jpreet927",
     },
     restaurantLandingPage: {
         previewImg: "../images/Gallery Thumbnails/Development/Restaurant-Landing-Page.png",
         title: "Restaurant Landing Page",
         description: "A landing page built using a local restaurant as reference.",
+        preview: "https://jpreet927.github.io/restaurant-landing-page/",
+        repo: "https://github.com/Jpreet927/restaurant-landing-page",
     },
 }
 
@@ -79,18 +81,18 @@ export const artwork = {
     },
     donda: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/DONDA Front.png",
-        title: "Kanye West - DONDA Album Art Concept",
+        title: "Kanye West - DONDA Album Art",
         description: "Inspired by various elements of the album and the marketing campaign."
     },
     interframe: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Interframe - everything will be ok.png",
         title: "Everything Will Be Ok.",
-        description: "An album art concept created for revolutionary musician and composer 'Interframe'"
+        description: "Album art created for revolutionary musician and composer 'Interframe'"
     },
     strangerThings: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Stranger-Things-3-Poster.png",
-        title: "Stranger Things 3 Poster Concept",
-        description: "A poster concept for Stranger Things Season 3, inspired by elements of the show."
+        title: "Stranger Things 3 Poster",
+        description: "A poster concept for Stranger Things Season 3."
     },
     kyleLowryPoster: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Kyle-Lowry-Poster.png",
@@ -100,22 +102,22 @@ export const artwork = {
     empireScore: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Dallas-Empire-Rome-3.png",
         title: "Dallas Empire Scorecard",
-        description: "A scorecard graphic concept created for competitive gaming organization Dallas Empire."
+        description: "A scorecard social media graphic concept created for the Dallas Empire."
     },
     geurillasGameday: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/LA-Guerrilas-Gameday.png",
         title: "LA Guerillas Gameday",
-        description: "A gameday graphic concept created for competitive gaming organization LA Guerillas."
+        description: "A gameday social media graphic concept created for the LA Guerillas."
     },
     ravensScore: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/LRR-Victory.png",
         title: "London Royal Ravens Victory",
-        description: "A match result graphic concept created for competitive gaming organization London Royal Ravens."
+        description: "A match result social media graphic concept created for the London Royal Ravens."
     },
     northCSGO: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Northern-Forces-CSGO-Scorecard.png",
         title: "North CS Scorecard",
-        description: "A scorecard graphic created for the Northern Forces Counterstrike team."
+        description: "A scorecard social media graphic created for the Northern Forces."
     },
     huntsmenEnvoy: {
         previewImg: "../images/Gallery Thumbnails/Compressed Images/Envoy-Poster.png",

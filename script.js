@@ -1,8 +1,3 @@
-// import Scrollbar from 'smooth-scrollbar';
-
-// Smooth Scroll 
-// Scrollbar.init(document.querySelector('#body'));
-
 // GSAP Animations
 let tl = gsap.timeline({ defaults: { ease: "power4.easeOut", duration: 2 } });
 
@@ -15,8 +10,13 @@ tl.from('.main__container', { scale: 1.15, duration: 1, opacity: 0 })
     .from('#behance-logo', { y: 50, opacity: 0, duration: 0.5 }, "-=0.4")
     .from('.main__social-line', { height: 0, duration: 1.25 }, "-=1")
 
-// Callback Functions
+// Particles.js
+// let contactDiv = document.getElementById("particles-js");
+particlesJS.load('particles-js', './config/particlesjs-config.json', function() {
+    console.log('particles loaded');
+})
 
+// Callback Functions
 function toggleNavbarBackground() {
     let navbar = document.querySelector('.main__navbar');
     window.pageYOffset > 900 ? navbar.classList.add('navbar-background') : navbar.classList.remove('navbar-background')

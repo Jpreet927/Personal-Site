@@ -48,7 +48,22 @@ function renderSoftwareProjects() {
         let projectLinkSeparator = document.createElement("p");
         projectLinkSeparator.textContent = "|";
 
-        projectLinksContainer.append(projectPreviewLink, projectLinkSeparator, projectRepoLink);
+        // if (projectPreviewLink.href !== "") {
+        //     projectLinksContainer.append(projectPreviewLink)
+        // }
+
+        if (project.preview !== "" && project.repo !== "") {
+            console.log(projectPreviewLink.href);
+            projectLinksContainer.append(projectPreviewLink, projectLinkSeparator, projectRepoLink);
+        } else if (project.preview !== "" && project.repo === "") {
+            projectLinksContainer.append(projectPreviewLink)
+        } else if (project.repo !== "" && project.preview === "") {
+            projectLinksContainer.append(projectRepoLink);
+        }
+
+        // if (projectRepoLink.href !== "") {
+        //     projectLinksContainer.append(projectRepoLink);
+        // }
         projectInfoDetails.append(projectInfoTitle, projectInfoDescription, projectLinksContainer);
         projectInfoContainer.append(projectInfoDetails);
         projectContainer.append(projectInfoContainer, projectThumbnail);
