@@ -6,6 +6,13 @@ export const softwareProjects = {
         preview: "https://youtu.be/b8yH6oT6mlI",
         repo: "",
     },
+    ecommerce: {
+        previewImg: "../images/Gallery Thumbnails/Development/Ecommerce.jpg",
+        title: "Allora Salve",
+        description: "A fictional ecommerce website where users can browse products and manage their cart.",
+        preview: "https://jpreet927.github.io/ecommerce-site/",
+        repo: "https://github.com/Jpreet927/ecommerce-site",
+    },
     cvBuilder: {
         previewImg: "../images/Gallery Thumbnails/Development/CV-App.jpg",
         title: "React CV Builder",
@@ -14,7 +21,7 @@ export const softwareProjects = {
         repo: "https://github.com/Jpreet927/cv-project",
     },
     weatherApp: {
-        previewImg: "../images/Gallery Thumbnails/Development/Weather-App.jpg",
+        previewImg: "../images/Gallery Thumbnails/Development/Weather-App-2.jpg",
         title: "Dynamic Weather App",
         description: "A webapp that fetches weather data from the Open Weather API with dynamic icons and background, reflecting the current climate.",
         preview: "",
@@ -28,7 +35,7 @@ export const softwareProjects = {
         repo: "https://github.com/Jpreet927",
     },
     restaurantLandingPage: {
-        previewImg: "../images/Gallery Thumbnails/Development/Restaurant-Landing-Page.jpg",
+        previewImg: "../images/Gallery Thumbnails/Development/Restaurant-Landing-Page-2.jpg",
         title: "Restaurant Landing Page",
         description: "A landing page built using a local restaurant as reference.",
         preview: "https://jpreet927.github.io/restaurant-landing-page/",
