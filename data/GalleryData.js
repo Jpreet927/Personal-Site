@@ -24,15 +24,15 @@ export const softwareProjects = {
         previewImg: "../images/Gallery Thumbnails/Development/Weather-App-2.jpg",
         title: "Dynamic Weather App",
         description: "A webapp that fetches weather data from the Open Weather API with dynamic icons and background, reflecting the current climate.",
-        preview: "",
+        preview: "https://jpreet927.github.io/weather-app/",
         repo: "https://github.com/Jpreet927/weather-app",
     },
     todoList: {
         previewImg: "../images/Gallery Thumbnails/Development/To-Do-List.png",
         title: "To-Do List",
         description: "A subject organized CRUD task list where topics are assigned a randomly generated colour identifier.",
-        preview: "",
-        repo: "https://github.com/Jpreet927",
+        preview: "https://jpreet927.github.io/todo-list/",
+        repo: "https://github.com/Jpreet927/todo-list",
     },
     restaurantLandingPage: {
         previewImg: "../images/Gallery Thumbnails/Development/Restaurant-Landing-Page-2.jpg",
