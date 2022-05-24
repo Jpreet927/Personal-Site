@@ -1,455 +1,465 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  background-image: url("../images/Section-Background.png");
-  /* background-position: center; */
-  background-size: cover;
-  position: relative;
+    background-image: url("../images/Section-Background.png");
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
 }
 
 .gallery-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5em 10em;
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 10em;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
 }
 
 .navbar-background {
-  background-color: rgba(3, 7, 22, 0.815);
-  backdrop-filter: blur(2rem);
+    background-color: rgba(3, 7, 22, 0.815);
+    backdrop-filter: blur(2rem);
 }
 
 .gallery-navbar img {
-  height: 16px;
+    height: 16px;
 }
 
 .gallery-navbar ul {
-  display: flex;
-  gap: 5em;
+    display: flex;
+    gap: 5em;
 }
 
 .gallery-navbar ul li {
-  list-style: none;
-  /* transition: background-image 0.2s ease; */
+    list-style: none;
+    /* transition: background-image 0.2s ease; */
 }
 
 .gallery-navbar ul li a {
-  text-decoration: none;
-  color: rgb(238, 238, 238);
-  transition: all 0.2s ease;
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    transition: all 0.2s ease;
 }
 
 .gallery-hamburger {
-  transition: transform 0.2s ease;
-  display: none;
-  z-index: 100;
+    transition: transform 0.2s ease;
+    display: none;
+    z-index: 100;
 }
 
 .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.2 ease;
-  background-color: rgb(238, 238, 238);
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.2 ease;
+    background-color: rgb(238, 238, 238);
 }
 
 .gallery-hamburger:hover {
-  cursor: pointer;
-  transform: scale(1.2);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .gallery-hamburger:focus {
-  outline: none;
+    outline: none;
 }
 
 .current-page {
-  font-weight: 700;
-  background-image: linear-gradient(to right, #409dea, #7fe3f9);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #409dea, #7fe3f9);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .gallery-navbar ul li a:hover {
-  background-image: linear-gradient(to right, #409dea, #7fe3f9);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #409dea, #7fe3f9);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .gallery-body {
-  padding: 3em 15em;
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
+    padding: 3em 15em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 .gallery-body h3 {
-  background-image: linear-gradient(to right, #409dea, #7fe3f9);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  margin-bottom: 1em;
+    background-image: linear-gradient(to right, #409dea, #7fe3f9);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1em;
 }
 
 .gallery-title {
-  color: rgb(238, 238, 238);
-  font-size: 3em;
+    color: rgb(238, 238, 238);
+    font-size: 3em;
 }
 
 .development-projects-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
 .development-project,
 .design-project,
 .artwork {
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 0px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.2s ease;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s ease;
 }
 
 .artwork {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .development-projects-container img,
 .design-projects-container img {
-  width: 100%;
-  transition: transform 0.2s ease;
+    width: 100%;
+    transition: transform 0.2s ease;
 }
 
 .development-project:hover img,
 .design-project:hover img,
 .artwork:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .development-project:hover .project-information,
 .design-project:hover .design-project-information,
 .artwork:hover .artwork-information {
-  display: block;
+    display: block;
 }
 
 .development-project .project-information:hover,
 .design-project .design-project-information:hover,
 .artwork .artwork-information:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .design-projects-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
 .artwork-gallery-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .artwork-gallery-column {
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 15px;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 15px;
 }
 
 .artwork img {
-  width: 100%;
-  height: auto;
-  /* margin-bottom: 24px; */
-  transition: transform 0.2s ease;
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 24px; */
+    transition: transform 0.2s ease;
 }
 
 .project-information,
 .design-project-information {
-  /* background: linear-gradient(to bottom, transparent 0%, rgba(2, 2, 5, 0.795) 100%); */
-  backdrop-filter: blur(0.4em);
-  background: #03050aad;
-  height: 100%;
-  width: 100%;
-  /* padding: 1.5em; */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  display: none;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+    /* background: linear-gradient(to bottom, transparent 0%, rgba(2, 2, 5, 0.795) 100%); */
+    backdrop-filter: blur(0.4em);
+    background: #03050aad;
+    height: 100%;
+    width: 100%;
+    /* padding: 1.5em; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .artwork-information {
-  backdrop-filter: blur(0.4em);
-  background: #03050aad;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  display: none;
-  opacity: 0;
+    backdrop-filter: blur(0.4em);
+    background: #03050aad;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    display: none;
+    opacity: 0;
 }
 
 .artwork-enlarge-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid white;
-  background: none;
-  border-radius: 100px;
-  padding: 6px 12px;
-  color: rgb(238, 238, 238);
-  font-size: 0.6em;
-  transition: transform 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    background: none;
+    border-radius: 100px;
+    padding: 6px 12px;
+    color: rgb(238, 238, 238);
+    font-size: 0.6em;
+    transition: transform 0.2s ease;
 }
 
 .artwork-enlarge-button:hover {
-  cursor: pointer;
-  /* transform: translate(-50%, -50%);
+    cursor: pointer;
+    /* transform: translate(-50%, -50%);
   transform: scale(1.1); */
 }
 
 .project-information-details,
 .design-project-information-details {
-  position: absolute;
-  bottom: 1.5em;
-  left: 1.5em;
-  right: 1.5em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+    right: 1.5em;
 }
 
 .artwork-information-details {
-  position: absolute;
-  bottom: 1.5em;
-  left: 1.5em;
-  right: 1.5em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+    right: 1.5em;
 }
 
 .project-information .project-information-title,
 .design-project-information .design-project-information-title,
 .artwork-information .artwork-information-title {
-  color: rgb(238, 238, 238);
-  font-size: 1.2em;
-  margin-bottom: 0.6em;
+    color: rgb(238, 238, 238);
+    font-size: 1.2em;
+    margin-bottom: 0.6em;
 }
 
 .project-information .project-information-description,
 .design-project-information .design-project-information-description,
 .artwork-information .artwork-information-description {
-  font-size: 0.8em;
-  color: rgb(238, 238, 238);
-  margin-bottom: 0.6em;
+    font-size: 0.8em;
+    color: rgb(238, 238, 238);
+    margin-bottom: 0.6em;
 }
 
 .project-information .project-preview,
 .design-project-information .design-project-preview {
-  display: flex;
-  gap: 0.6em;
+    display: flex;
+    gap: 0.6em;
 }
 
 .project-information .project-preview a,
 .project-information .project-preview p,
 .design-project-information .design-project-preview a,
 .design-project-information .design-project-preview p {
-  color: rgb(238, 238, 238);
-  font-size: 0.8em;
-  text-decoration: underline;
+    color: rgb(238, 238, 238);
+    font-size: 0.8em;
+    text-decoration: underline;
 }
 
 .project-information
-  .project-preview
-  a:hover
-  .design-project-information
-  .design-project-preview
-  a:hover {
-  cursor: pointer;
+    .project-preview
+    a:hover
+    .design-project-information
+    .design-project-preview
+    a:hover {
+    cursor: pointer;
 }
 
 .gallery-enlarge-container {
-  display: none;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 150;
-  background-image: url("../images/Section-Background.png");
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(3rem);
-  overflow: hidden;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    background-image: url("../images/Section-Background.png");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(3rem);
+    overflow: hidden;
 }
 
 .gallery-enlarge-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 #gallery-enlarge-close {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  width: 1em;
-  transition: transform 0.2s ease;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 1em;
+    transition: transform 0.2s ease;
 }
 
 #gallery-enlarge-close:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .gallery-enlarge-image img {
-  max-width: 90%;
-  max-height: 90%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3em 0;
-  background-color: #0a0e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    background-color: #0a0e1e;
 }
 
 footer p {
-  font-size: 0.8em;
-  color: rgb(174, 183, 190);
+    font-size: 0.8em;
+    color: rgb(174, 183, 190);
+}
+
+@media all and (max-width: 1400px) {
+    .artwork-information-description {
+        display: none;
+    }
 }
 
 @media all and (max-width: 1200px) {
-  .gallery-body {
-    padding: 3em 10em;
-  }
+    .gallery-body {
+        padding: 3em 10em;
+    }
+
+    .artwork-information-title {
+        display: none;
+    }
 }
 
 @media all and (max-width: 1000px) {
-  .design-projects-container,
-  .development-projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-  }
+    .design-projects-container,
+    .development-projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
 
-  .artwork-gallery-column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 15px;
-  }
+    .artwork-gallery-column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
 }
 
 @media all and (max-width: 860px) {
-  .gallery-body {
-    padding: 3em 5em;
-  }
+    .gallery-body {
+        padding: 3em 5em;
+    }
 
-  .gallery-navbar ul {
-    display: none;
-  }
+    .gallery-navbar ul {
+        display: none;
+    }
 
-  .gallery-navbar ul {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-  }
+    .gallery-navbar ul {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
 
-  .gallery-navbar ul.visible {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url("../images/Section-Background.png");
-    transition: 0.2s; 
-    z-index: 90;
-  }
+    .gallery-navbar ul.visible {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url("../images/Section-Background.png");
+        transition: 0.2s;
+        z-index: 90;
+    }
 
-  .gallery-hamburger {
-    display: block;
-  }
+    .gallery-hamburger {
+        display: block;
+    }
 
-  .gallery-hamburger .bar {
-    transition: transform 0.5s ease, opacity 0.5s ease;
-  }
-  
-  .gallery-hamburger.visible .bar:nth-child(2){
-    opacity: 0;
-  }
+    .gallery-hamburger .bar {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
 
-  .gallery-hamburger.visible .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .gallery-hamburger.visible .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(315deg);
-  }
+    .gallery-hamburger.visible .bar:nth-child(2) {
+        opacity: 0;
+    }
 
-  .gallery-navbar {
-    padding: 5em 5em;
-  }
+    .gallery-hamburger.visible .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .gallery-hamburger.visible .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(315deg);
+    }
+
+    .gallery-navbar {
+        padding: 5em 5em;
+    }
 }
 
 @media all and (max-width: 600px) {
-  .design-projects-container,
-  .development-projects-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-  }
+    .design-projects-container,
+    .development-projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
 
-  .artwork-gallery-column {
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 15px;
-  }
+    .artwork-gallery-column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
-  .gallery-body {
-    padding: 1em 3em;
-  }
+    .gallery-body {
+        padding: 1em 3em;
+    }
 
-  .gallery-navbar {
-    padding: 5em 3em;
-  }
+    .gallery-navbar {
+        padding: 5em 3em;
+    }
 }

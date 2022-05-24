@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../styles/contact.css">
-</head>
-<body>
-    <header>
-        <nav class="contact-navbar">
-            <img src="../images/jpreet-text-logo.png" alt="">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/gallery.html">Gallery</a></li>
-                <li><a href="../pages/about.html" >About</a></li>
-                <li><a class="current-page">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <footer>
-        <p>© 2022 Jpreet</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="../styles/contact.css" />
+        <link rel="icon" href="../images/page-icon.png" />
+    </head>
+    <body>
+        <header>
+            <nav class="contact-navbar">
+                <img src="../images/jpreet-text-logo.png" alt="" />
+                <div class="contact-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a class="current-page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contact-container">
+            <div class="contact-left">
+                <h1>Drop me a <span>message</span> for any inquiries!</h1>
+                <p>jaipreet.singh1@ontariotechu.net</p>
+            </div>
+            <div class="contact-right">
+                <form action="" id="contact-form">
+                    <h1>Contact Me</h1>
+                    <input type="text" id="name" placeholder="Your Name" />
+                    <input type="text" id="email" placeholder="Your Email" />
+                    <textarea
+                        id="message"
+                        rows="10"
+                        placeholder="Your Message"
+                    ></textarea>
+                    <button type="submit" id="submit">Send</button>
+                </form>
+                <div class="contact-response success">
+                    <div class="response-icon success">
+                        <img src="../images/Icons/check.png" alt="" />
+                    </div>
+                    <div class="response-message">
+                        <p id="response-success">Thank you!</p>
+                        <p id="response-success-subtext">
+                            I'll get back to you ASAP.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-response error">
+                    <div class="response-icon error">
+                        <img src="../images/Icons/error.png" alt="" />
+                    </div>
+                    <div class="response-message">
+                        <p id="response-error">Something went wrong.</p>
+                        <p id="response-error-subtext">Please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2022 Jpreet</p>
+        </footer>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("sSRHwcsRi0kff8bLI");
+            })();
+        </script>
+        <script src="../scripts/contact.js"></script>
+    </body>
 </html>

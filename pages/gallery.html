@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="../styles/gallery.css">
-    <link rel="icon" href="../images/page-icon.png">
-    <script type="module" src="../scripts/vibrant.js" defer></script>
-    <script type="module" src="../scripts/gallery.js" defer></script>
-    <script type="module" src="../data/GalleryData.js" defer></script>
-</head>
-<body>
-    <div class="gallery-enlarge-container">
-        <img id="gallery-enlarge-close" src="../images/x.png" alt="">
-        <div class="gallery-enlarge-image">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+        <link rel="stylesheet" href="../styles/gallery.css" />
+        <link rel="icon" href="../images/page-icon.png" />
+        <script type="module" src="../scripts/vibrant.js" defer></script>
+        <script type="module" src="../scripts/gallery.js" defer></script>
+        <script type="module" src="../data/GalleryData.js" defer></script>
+    </head>
+    <body>
+        <div class="gallery-enlarge-container">
+            <img id="gallery-enlarge-close" src="../images/x.png" alt="" />
+            <div class="gallery-enlarge-image"></div>
         </div>
-    </div>
-    <div class="gallery-main-container">
-        <header>
-            <nav class="gallery-navbar">
-                <img src="../images/jpreet-text-logo.png" alt="">
-                <div class="gallery-hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="" class="current-page">Gallery</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <!-- <li><a href="../pages/contact.html">Contact</a></li> -->
-                </ul>
-            </nav>
-        </header>
-        <div class="gallery-body">
-            <h1 class="gallery-title">Gallery</h1>
-            <div class="development-projects">
-                <h3>Software Development Projects</h3>
-                <div class="development-projects-container">
-                    
-                </div>
-            </div>
-            <div class="design-projects">
-                <h3>Graphic Design Projects</h3>
-                <div class="design-projects-container">
-                    
-                </div>
-            </div>
-            <div class="image-gallery">
-                <h3>Artwork Gallery</h3>
-                <div class="artwork-gallery-container">
-                    <div class="artwork-gallery-column" id="column-1">
-                        
+        <div class="gallery-main-container">
+            <header>
+                <nav class="gallery-navbar">
+                    <img src="../images/jpreet-text-logo.png" alt="" />
+                    <div class="gallery-hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                    <div class="artwork-gallery-column" id="column-2">
-                        
-                    </div>
-                    <div class="artwork-gallery-column" id="column-3">
-                        
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="" class="current-page">Gallery</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="gallery-body">
+                <h1 class="gallery-title">Gallery</h1>
+                <div class="development-projects">
+                    <h3>Software Development Projects</h3>
+                    <div class="development-projects-container"></div>
+                </div>
+                <div class="design-projects">
+                    <h3>Graphic Design Projects</h3>
+                    <div class="design-projects-container"></div>
+                </div>
+                <div class="image-gallery">
+                    <h3>Artwork Gallery</h3>
+                    <div class="artwork-gallery-container">
+                        <div class="artwork-gallery-column" id="column-1"></div>
+                        <div class="artwork-gallery-column" id="column-2"></div>
+                        <div class="artwork-gallery-column" id="column-3"></div>
                     </div>
                 </div>
             </div>
+            <footer>
+                <p>© 2022 Jpreet</p>
+            </footer>
         </div>
-        <footer>
-            <p>© 2022 Jpreet</p>
-        </footer>
-    </div>
-</body>
+    </body>
 </html>
