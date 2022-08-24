@@ -52,12 +52,19 @@ export const softwareProjects = {
 };
 
 export const designProjects = {
+    // cdl: {
+    //     previewImg: "",
+    //     title: "CDL Branding Project",
+    //     description:
+    //         "Explored social media graphic directions for various organizations in the Call of Duty League.",
+    //     behanceLink: "",
+    // },
     entropy: {
         previewImg: "../images/Gallery Thumbnails/Design/Entropy-Rebrand.jpg",
         title: "Entropy Gaming Brand Identity",
         description:
             "Established new social media assets and brand guidelines to reflect core brand attributes.",
-        behanceLink: "https://www.behance.net/jaipreet",
+        behanceLink: "https://www.behance.net/gallery/148256469/Entropy-Gaming",
     },
     huntsmen: {
         previewImg: "../images/Gallery Thumbnails/Design/Huntsmen-Proposal.jpg",
