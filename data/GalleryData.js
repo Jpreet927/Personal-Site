@@ -1,4 +1,12 @@
 export const softwareProjects = {
+    jtweet: {
+        previewImg: "../images/Gallery Thumbnails/Development/Jtweet.jpeg",
+        title: "Harmoni",
+        description:
+            "A functional interpolation of twitter built with React and Firebase.",
+        preview: "",
+        repo: "https://github.com/Jpreet927/jtweet",
+    },
     harmoni: {
         previewImg: "../images/Gallery Thumbnails/Development/Harmoni.jpg",
         title: "Harmoni",
