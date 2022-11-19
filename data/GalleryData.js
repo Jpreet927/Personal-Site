@@ -15,6 +15,15 @@ export const softwareProjects = {
         preview: "https://youtu.be/b8yH6oT6mlI",
         repo: "",
     },
+    entertainmentHub: {
+        previewImg:
+            "../images/Gallery Thumbnails/Development/Entertainment-Hub.jpg",
+        title: "Entertainment Hub",
+        description:
+            "A website that pulls data from the TMDB API to display popular movies and TV shows.",
+        preview: "https://jpreet927.github.io/Entertainment-Hub/",
+        repo: "https://github.com/Jpreet927/Entertainment-Hub",
+    },
     ecommerce: {
         previewImg: "../images/Gallery Thumbnails/Development/Ecommerce.jpg",
         title: "Allora Salve",

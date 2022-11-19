@@ -319,15 +319,19 @@
 }
 
 .skills__design-container,
-.skills__developmenr-container {
+.skills__development-container {
     padding: 0 0em;
+}
+
+.skills__development-container {
+    margin-bottom: 2em;
 }
 
 .skills__design,
 .skills__development {
     display: flex;
     align-items: flex-start;
-    gap: 6em;
+    gap: 3em;
 }
 
 .skills__design {
@@ -491,16 +495,32 @@ footer p {
     }
 
     .project-alternate .project-thumbnail {
-        order: 1;
+        order: 2;
     }
 
     .project-alternate .project-description {
-        order: 2;
+        order: 1;
     }
 
     .project-description,
     .project-thumbnail {
         width: 100%;
+    }
+
+    .project-thumbnail {
+        padding: 0;
+        overflow: hidden;
+        z-index: 0;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .project-thumbnail img {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease-in-out;
     }
 
     .skills__design,
