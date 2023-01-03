@@ -121,7 +121,7 @@ export const artwork = {
         fullSizeImg:
             "../images/Gallery Thumbnails/Artwork Fullsize/Code-Geass-Painting-Final.jpg",
         title: "Emporer Lelouch",
-        description: "A piece inspured by Code Geass.",
+        description: "A digitally painted piece inspired by Code Geass.",
     },
     lastOfUs2: {
         previewImg:
@@ -148,7 +148,7 @@ export const artwork = {
             "../images/Gallery Thumbnails/Artwork Fullsize/Interframe - everything will be ok.jpg",
         title: "Everything Will Be Ok.",
         description:
-            "Album art created for revolutionary musician and composer 'Interframe'",
+            "Album art created for Interframe's official release 'Everything Will Be Ok.'",
     },
     strangerThings: {
         previewImg:
